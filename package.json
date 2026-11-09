@@ -1,0 +1,28 @@
+{
+  "name": "cya-design-tokens",
+  "version": "2.0.0",
+  "description": "CYA Design System 2.0 tokens, fonts, Tailwind 4 theme, shared component styles and brand check for Corporate Yoga Australia and Wellbeing Studio projects.",
+  "private": true,
+  "type": "module",
+  "license": "UNLICENSED",
+  "files": ["dist", "fonts", "scripts/check-brand.mjs", "src/tokens.json"],
+  "exports": {
+    ".": { "types": "./dist/tokens.d.ts", "default": "./dist/tokens.js" },
+    "./index.css": "./dist/index.css",
+    "./tokens.css": "./dist/tokens.css",
+    "./fonts.css": "./dist/fonts.css",
+    "./type.css": "./dist/type.css",
+    "./base.css": "./dist/base.css",
+    "./components.css": "./dist/components.css",
+    "./theme.css": "./dist/theme.css",
+    "./palette.json": "./dist/palette.json",
+    "./tokens.json": "./src/tokens.json",
+    "./fonts/*": "./fonts/*"
+  },
+  "bin": { "cya-brand-check": "scripts/check-brand.mjs" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs && git diff --exit-code dist"
+  },
+  "engines": { "node": ">=20" }
+}

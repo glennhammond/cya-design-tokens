@@ -1,0 +1,105 @@
+/* CYA Design Tokens 2.0.0. Generated from src/tokens.json by scripts/build.mjs. Do not edit. */
+/* Shared component classes. Canonical treatments from CYA Design System 2.0. */
+@layer components {
+  .cya-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: var(--cya-target-min);
+    padding: 0 24px;
+    border: 1px solid transparent;
+    border-radius: var(--cya-radius-md);
+    font-family: var(--cya-font-body);
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 160ms cubic-bezier(0.4, 0, 0.2, 1), color 160ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .cya-btn--primary { background: var(--cya-action-primary); color: var(--cya-action-primary-text); }
+  .cya-btn--primary:hover { background: var(--cya-action-primary-hover); }
+  .cya-btn--secondary { background: var(--cya-white); color: var(--cya-teal-deep); border-color: var(--cya-border-brand); }
+  .cya-btn--secondary:hover { background: var(--cya-surface-quiet); }
+  .cya-btn--on-deep { background: transparent; color: var(--cya-white); border-color: var(--cya-white); }
+  .cya-btn--on-deep:hover { background: var(--cya-white); color: var(--cya-teal-deep); }
+  .cya-btn--text {
+    min-height: 0;
+    padding: 0;
+    border-radius: 0;
+    color: var(--cya-teal-deep);
+    font-size: 14px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+  .cya-btn--text:hover { color: var(--cya-teal); }
+  .cya-btn:disabled, .cya-btn[aria-disabled="true"] { opacity: 0.6; cursor: not-allowed; }
+
+  .cya-kicker {
+    margin: 0;
+    color: var(--cya-text-brand);
+    font-family: var(--cya-font-body);
+    font-size: 12px;
+    line-height: 1.35;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .cya-surface-deep .cya-kicker { color: var(--cya-on-deep-muted); }
+
+  .cya-container {
+    width: 100%;
+    max-width: var(--cya-container-max);
+    margin-inline: auto;
+    padding-inline: var(--cya-space-5);
+  }
+  .cya-section { padding-block: var(--cya-space-10); }
+  @media (min-width: 640px) {
+    .cya-container { padding-inline: var(--cya-space-8); }
+    .cya-section { padding-block: var(--cya-space-14); }
+  }
+  @media (min-width: 1024px) {
+    .cya-container { padding-inline: var(--cya-space-12); }
+    .cya-section { padding-block: var(--cya-space-16); }
+  }
+  .cya-surface-page { background: var(--cya-surface-page); }
+  .cya-surface-card { background: var(--cya-surface-card); }
+  .cya-surface-quiet { background: var(--cya-surface-quiet); }
+  .cya-surface-deep { background: var(--cya-surface-deep); color: var(--cya-text-on-deep); }
+  .cya-surface-deep :is(h1, h2, h3, h4) { color: var(--cya-text-on-deep); }
+
+  .cya-label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--cya-text-heading);
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 700;
+  }
+  .cya-hint { margin: 4px 0 0; color: var(--cya-text-muted); font-size: 13px; }
+  .cya-input {
+    display: block;
+    width: 100%;
+    min-height: var(--cya-target-min);
+    padding: 0 16px;
+    border: 1px solid var(--cya-border-control);
+    border-radius: var(--cya-radius-sm);
+    background: var(--cya-white);
+    color: var(--cya-charcoal);
+    font: 400 16px/1.4 var(--cya-font-body);
+  }
+  textarea.cya-input { min-height: 128px; padding-block: 12px; }
+  .cya-input[aria-invalid="true"] { border: 2px solid var(--cya-error); }
+  .cya-field-error { margin: 6px 0 0; color: var(--cya-error); font-size: 14px; font-weight: 600; }
+
+  .cya-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid var(--cya-border-hairline);
+    border-radius: var(--cya-radius-sm);
+    background: var(--cya-surface-card);
+  }
+}

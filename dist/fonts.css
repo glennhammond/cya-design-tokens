@@ -1,0 +1,43 @@
+/* CYA Design Tokens 2.0.0. Generated from src/tokens.json by scripts/build.mjs. Do not edit. */
+@font-face {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/urbanist-latin-600-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/urbanist-latin-700-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/urbanist-latin-800-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/open-sans-latin-400-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/open-sans-latin-600-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/open-sans-latin-700-normal.woff2") format("woff2");
+}

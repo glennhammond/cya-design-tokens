@@ -1,0 +1,34 @@
+/* Base element styles. Optional: import when a project wants the brand defaults on plain HTML. */
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+  body {
+    background: var(--cya-surface-page);
+    color: var(--cya-text-body);
+    font-family: var(--cya-font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--cya-font-heading);
+    color: var(--cya-text-heading);
+    font-weight: 700;
+    text-wrap: balance;
+  }
+  a {
+    color: var(--cya-text-brand);
+  }
+  :focus-visible {
+    outline: 3px solid var(--cya-focus-ring);
+    outline-offset: 4px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}

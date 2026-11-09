@@ -1,0 +1,6 @@
+/* CYA Design Tokens 2.0.0. Generated from src/tokens.json by scripts/build.mjs. Do not edit. */
+/* Tokens, type, base and components. Fonts load separately: see README. */
+@import "./tokens.css";
+@import "./type.css";
+@import "./base.css";
+@import "./components.css";

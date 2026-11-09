@@ -1,0 +1,6 @@
+{
+  "paths": ["app", "components", "styles"],
+  "copy": ["content"],
+  "ignore": ["superseded"],
+  "allowColours": []
+}
