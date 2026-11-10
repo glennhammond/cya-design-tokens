@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.0 (10 November 2026)
+
+- `cya-brand-check` flags headings that end in a full stop: `heading`, `headline` and `title` fields, and JSX `<h1>` to `<h6>`. Headings never end in a full stop (Glenn, 10 Nov 2026).
+
 ## 2.0.0 (10 November 2026)
 
 First release, matching CYA Design System 2.0.

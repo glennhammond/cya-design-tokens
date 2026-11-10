@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-// cya-brand-check: flags colours, fonts and copy that drift from CYA Design System 2.0.
+// cya-brand-check: flags colours, fonts and copy that drift from CYA Design System 2.0,
+// including headings that end in a full stop.
 // Usage: cya-brand-check [paths...] [--copy <path>]... [--warn]
 // Config (optional): cya-brand.config.json in the working directory:
 //   { "paths": ["app", "components"], "copy": ["content"], "ignore": ["superseded"], "allowColours": ["#000000"] }
@@ -59,6 +60,8 @@ for (const root of paths) {
         const hex = expand(raw);
         if (!allowed.has(hex)) add(file, i + 1, "colour", `${raw} is not in the CYA palette`);
       }
+      const jsxHeading = text.match(/([^>.]{0,50}[^.])\.\s*<\/h[1-6]>/);
+      if (jsxHeading) add(file, i + 1, "heading", `heading ends in a full stop: ${jsxHeading[1].trim()}.`);
       const font = text.match(BANNED_FONTS);
       if (font) add(file, i + 1, "font", `${font[0]}: use Urbanist (headings) or Open Sans (body)`);
     });
@@ -71,6 +74,10 @@ for (const root of copy) {
       if (text.includes("cya-brand-ignore")) return;
       if (/\bprogrammes?\b/i.test(text)) add(file, i + 1, "spelling", 'use "program", not "programme"');
       if (/\u2014/.test(text)) add(file, i + 1, "punctuation", "em dash in copy");
+      // Headings never end in a full stop. Covers heading, headline and title fields.
+      for (const m of text.matchAll(/\b(heading|headline|title)\s*[:=]\s*\{?\s*["'`]((?:[^"'`\\]|\\.)*[^.])\.["'`]/g)) {
+        add(file, i + 1, "heading", `heading ends in a full stop: ${m[2].slice(-50)}.`);
+      }
       for (const m of text.matchAll(/["'`][^"'`]*\bCYA\b(?![_-])[^"'`]*["'`]/g)) {
         add(file, i + 1, "naming", `"CYA" in public copy: write "Corporate Yoga Australia" (${m[0].slice(0, 60)})`);
       }

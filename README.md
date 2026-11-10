@@ -17,14 +17,14 @@ The code side of **CYA Design System 2.0**: one versioned package that every Cor
 | `cya-design-tokens/base.css` | Body, heading, link and focus defaults |
 | `cya-design-tokens/components.css` | `.cya-btn`, `.cya-input`, `.cya-label`, `.cya-kicker`, `.cya-section`, `.cya-container`, `.cya-card`, surface classes |
 | `cya-design-tokens` (JS) | `tokens.colors.gold` and so on, resolved hex values for charts, emails and PDFs |
-| `cya-brand-check` | Command that flags off-palette colours, retired fonts, "programme", "CYA" in public copy and em dashes |
+| `cya-brand-check` | Command that flags off-palette colours, retired fonts, "programme", "CYA" in public copy, em dashes and headings ending in a full stop |
 
 ## Install
 
 Straight from GitHub, pinned to a release tag. No registry needed.
 
 ```bash
-npm install github:glennhammond/cya-design-tokens#v2.0.0
+npm install github:glennhammond/cya-design-tokens#<commit or tag>
 ```
 
 ## Use it

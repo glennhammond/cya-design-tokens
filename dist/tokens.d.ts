@@ -1,4 +1,4 @@
-/* CYA Design Tokens 2.0.0. Generated from src/tokens.json by scripts/build.mjs. Do not edit. */
+/* CYA Design Tokens 2.1.0. Generated from src/tokens.json by scripts/build.mjs. Do not edit. */
 export declare const tokens: {
   version: string;
   colors: Record<"teal" | "teal-deep" | "teal-bright" | "gold" | "gold-hover" | "warm-white" | "white" | "charcoal" | "green-grey" | "pale-highlight" | "charcoal-muted" | "charcoal-border" | "on-deep-muted" | "logo-teal" | "logo-pale" | "error" | "success" | "scrim" | "surface-page" | "surface-card" | "surface-quiet" | "surface-deep" | "surface-highlight" | "text-body" | "text-heading" | "text-brand" | "text-muted" | "text-on-deep" | "border-hairline" | "border-control" | "border-brand" | "action-primary" | "action-primary-hover" | "action-primary-text" | "focus-ring" | "accent-rule", string>;

@@ -1,4 +1,4 @@
-/* CYA Design Tokens 2.0.0. Generated from src/tokens.json by scripts/build.mjs. Do not edit. */
+/* CYA Design Tokens 2.1.0. Generated from src/tokens.json by scripts/build.mjs. Do not edit. */
 /* Import after @import "tailwindcss". */
 @theme inline {
   --color-teal: var(--cya-teal);

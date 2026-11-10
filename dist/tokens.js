@@ -1,6 +1,6 @@
-/* CYA Design Tokens 2.0.0. Generated from src/tokens.json by scripts/build.mjs. Do not edit. */
+/* CYA Design Tokens 2.1.0. Generated from src/tokens.json by scripts/build.mjs. Do not edit. */
 export const tokens = {
-  "version": "2.0.0",
+  "version": "2.1.0",
   "colors": {
     "teal": "#115e67",
     "teal-deep": "#0e434a",
