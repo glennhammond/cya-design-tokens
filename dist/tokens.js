@@ -1,28 +1,27 @@
-/* CYA Design Tokens 2.1.0. Generated from src/tokens.json by scripts/build.mjs. Do not edit. */
+/* CYA Design Tokens 2.2.0. Generated from src/tokens.json by scripts/build.mjs. Do not edit. */
 export const tokens = {
-  "version": "2.1.0",
+  "version": "2.2.0",
   "colors": {
     "teal": "#115e67",
     "teal-deep": "#0e434a",
     "teal-bright": "#1693a5",
-    "gold": "#ca8d26",
+    "gold": "#c28624",
     "gold-hover": "#9c691b",
     "warm-white": "#f7f6f1",
     "white": "#ffffff",
     "charcoal": "#253436",
-    "green-grey": "#e7ece8",
     "pale-highlight": "#f3e8d2",
     "charcoal-muted": "#5a6465",
     "charcoal-border": "#878f90",
+    "charcoal-hairline": "#dedfdb",
     "on-deep-muted": "#cfd9db",
-    "logo-teal": "#54a9a2",
-    "logo-pale": "#c4e0dc",
+    "logo-teal": "#5cb8b2",
+    "logo-pale": "#bee3e0",
     "error": "#a33b3b",
     "success": "#3f7a55",
     "scrim": "rgba(8, 18, 19, 0.72)",
     "surface-page": "#f7f6f1",
     "surface-card": "#ffffff",
-    "surface-quiet": "#e7ece8",
     "surface-deep": "#0e434a",
     "surface-highlight": "#f3e8d2",
     "text-body": "#253436",
@@ -30,14 +29,14 @@ export const tokens = {
     "text-brand": "#115e67",
     "text-muted": "#5a6465",
     "text-on-deep": "#ffffff",
-    "border-hairline": "#e7ece8",
+    "border-hairline": "#dedfdb",
     "border-control": "#878f90",
     "border-brand": "#115e67",
-    "action-primary": "#ca8d26",
+    "action-primary": "#c28624",
     "action-primary-hover": "#9c691b",
     "action-primary-text": "#ffffff",
     "focus-ring": "#115e67",
-    "accent-rule": "#ca8d26"
+    "accent-rule": "#c28624"
   },
   "fonts": {
     "heading": "Urbanist, Arial, sans-serif",
@@ -72,7 +71,8 @@ export const tokens = {
     "container-max": "1280px",
     "container-narrow": "720px",
     "header-height": "88px",
-    "target-min": "48px"
+    "target-min": "48px",
+    "button-height": "52px"
   }
 };
 export default tokens;

@@ -1,4 +1,4 @@
-/* CYA Design Tokens 2.1.0. Generated from src/tokens.json by scripts/build.mjs. Do not edit. */
+/* CYA Design Tokens 2.2.0. Generated from src/tokens.json by scripts/build.mjs. Do not edit. */
 @layer components {
   .cya-display {
     font-family: var(--cya-font-heading);
@@ -65,10 +65,11 @@
     font-weight: 700;
   }
   .cya-button {
-    font-family: var(--cya-font-body);
-    font-size: 15px;
-    line-height: 20px;
-    font-weight: 600;
+    font-family: var(--cya-font-heading);
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 0.005em;
   }
   .cya-nav {
     font-family: var(--cya-font-body);

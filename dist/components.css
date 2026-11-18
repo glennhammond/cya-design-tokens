@@ -1,40 +1,57 @@
-/* CYA Design Tokens 2.1.0. Generated from src/tokens.json by scripts/build.mjs. Do not edit. */
+/* CYA Design Tokens 2.2.0. Generated from src/tokens.json by scripts/build.mjs. Do not edit. */
 /* Shared component classes. Canonical treatments from CYA Design System 2.0. */
 @layer components {
+  /* One button style (Glenn, 18 Nov 2026). White on gold passes WCAG AA only as large text,
+     so the label never drops below 19px bold. Every other action is a text link. */
   .cya-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
-    min-height: var(--cya-target-min);
-    padding: 0 24px;
+    min-height: var(--cya-button-height);
+    padding: 0 28px;
     border: 1px solid transparent;
     border-radius: var(--cya-radius-md);
-    font-family: var(--cya-font-body);
-    font-size: 15px;
-    line-height: 20px;
-    font-weight: 600;
+    background: var(--cya-action-primary);
+    color: var(--cya-action-primary-text);
+    font-family: var(--cya-font-heading);
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 0.005em;
     text-decoration: none;
     cursor: pointer;
     transition: background-color 160ms cubic-bezier(0.4, 0, 0.2, 1), color 160ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .cya-btn:hover { background: var(--cya-action-primary-hover); }
+  /* Kept so existing markup keeps working; it is the same single style. */
   .cya-btn--primary { background: var(--cya-action-primary); color: var(--cya-action-primary-text); }
   .cya-btn--primary:hover { background: var(--cya-action-primary-hover); }
-  .cya-btn--secondary { background: var(--cya-white); color: var(--cya-teal-deep); border-color: var(--cya-border-brand); }
-  .cya-btn--secondary:hover { background: var(--cya-surface-quiet); }
-  .cya-btn--on-deep { background: transparent; color: var(--cya-white); border-color: var(--cya-white); }
-  .cya-btn--on-deep:hover { background: var(--cya-white); color: var(--cya-teal-deep); }
+
+  /* Text link: every action that is not the one button. */
+  .cya-link,
   .cya-btn--text {
+    display: inline;
     min-height: 0;
     padding: 0;
+    border: 0;
     border-radius: 0;
+    background: none;
     color: var(--cya-teal-deep);
-    font-size: 14px;
+    font-family: var(--cya-font-body);
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 600;
+    letter-spacing: 0;
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
+    cursor: pointer;
   }
-  .cya-btn--text:hover { color: var(--cya-teal); }
+  .cya-link:hover,
+  .cya-btn--text:hover { background: none; color: var(--cya-teal); }
+  .cya-surface-deep :is(.cya-link, .cya-btn--text) { color: var(--cya-white); }
+  .cya-surface-deep :is(.cya-link, .cya-btn--text):hover { color: var(--cya-on-deep-muted); }
   .cya-btn:disabled, .cya-btn[aria-disabled="true"] { opacity: 0.6; cursor: not-allowed; }
 
   .cya-kicker {
@@ -66,7 +83,6 @@
   }
   .cya-surface-page { background: var(--cya-surface-page); }
   .cya-surface-card { background: var(--cya-surface-card); }
-  .cya-surface-quiet { background: var(--cya-surface-quiet); }
   .cya-surface-deep { background: var(--cya-surface-deep); color: var(--cya-text-on-deep); }
   .cya-surface-deep :is(h1, h2, h3, h4) { color: var(--cya-text-on-deep); }
 

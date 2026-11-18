@@ -1,6 +1,6 @@
 {
   "name": "cya-design-tokens",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "CYA Design System 2.0 tokens, fonts, Tailwind 4 theme, shared component styles and brand check for Corporate Yoga Australia and Wellbeing Studio projects.",
   "private": true,
   "type": "module",

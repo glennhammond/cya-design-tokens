@@ -15,7 +15,7 @@ The code side of **CYA Design System 2.0**: one versioned package that every Cor
 | `cya-design-tokens/fonts.css` | Self-hosted Urbanist and Open Sans. Import it from JavaScript, not from CSS (see below) |
 | `cya-design-tokens/type.css` | `.cya-display`, `.cya-heading-xl` to `.cya-heading-sm`, `.cya-body`, `.cya-kicker` and the rest |
 | `cya-design-tokens/base.css` | Body, heading, link and focus defaults |
-| `cya-design-tokens/components.css` | `.cya-btn`, `.cya-input`, `.cya-label`, `.cya-kicker`, `.cya-section`, `.cya-container`, `.cya-card`, surface classes |
+| `cya-design-tokens/components.css` | `.cya-btn` (the one button style), `.cya-link` (text links), `.cya-input`, `.cya-label`, `.cya-kicker`, `.cya-section`, `.cya-container`, `.cya-card`, surface classes |
 | `cya-design-tokens` (JS) | `tokens.colors.gold` and so on, resolved hex values for charts, emails and PDFs |
 | `cya-brand-check` | Command that flags off-palette colours, retired fonts, "programme", "CYA" in public copy, em dashes and headings ending in a full stop |
 
@@ -42,7 +42,8 @@ In the global stylesheet (for example `app/globals.css`):
 Then:
 
 ```tsx
-<a href="/contact" className="cya-btn cya-btn--primary">Plan with us</a>
+<a href="/contact" className="cya-btn">Plan with us</a>
+<a href="tel:1300373363" className="cya-link">Call 1300 373 363</a>
 <h2 className="cya-heading-lg">Work wellness into your workday</h2>
 <p className="text-text-muted">Sessions run on site, by livestream or in Wellbeing Studio.</p>
 ```
