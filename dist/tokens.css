@@ -1,26 +1,25 @@
-/* CYA Design Tokens 2.1.0. Generated from src/tokens.json by scripts/build.mjs. Do not edit. */
+/* CYA Design Tokens 2.2.0. Generated from src/tokens.json by scripts/build.mjs. Do not edit. */
 :root {
   --cya-teal: #115e67;
   --cya-teal-deep: #0e434a;
   --cya-teal-bright: #1693a5;
-  --cya-gold: #ca8d26;
+  --cya-gold: #c28624;
   --cya-gold-hover: #9c691b;
   --cya-warm-white: #f7f6f1;
   --cya-white: #ffffff;
   --cya-charcoal: #253436;
-  --cya-green-grey: #e7ece8;
   --cya-pale-highlight: #f3e8d2;
   --cya-charcoal-muted: #5a6465;
   --cya-charcoal-border: #878f90;
+  --cya-charcoal-hairline: #dedfdb;
   --cya-on-deep-muted: #cfd9db;
-  --cya-logo-teal: #54a9a2;
-  --cya-logo-pale: #c4e0dc;
+  --cya-logo-teal: #5cb8b2;
+  --cya-logo-pale: #bee3e0;
   --cya-error: #a33b3b;
   --cya-success: #3f7a55;
   --cya-scrim: rgba(8, 18, 19, 0.72);
   --cya-surface-page: var(--cya-warm-white);
   --cya-surface-card: var(--cya-white);
-  --cya-surface-quiet: var(--cya-green-grey);
   --cya-surface-deep: var(--cya-teal-deep);
   --cya-surface-highlight: var(--cya-pale-highlight);
   --cya-text-body: var(--cya-charcoal);
@@ -28,7 +27,7 @@
   --cya-text-brand: var(--cya-teal);
   --cya-text-muted: var(--cya-charcoal-muted);
   --cya-text-on-deep: var(--cya-white);
-  --cya-border-hairline: var(--cya-green-grey);
+  --cya-border-hairline: var(--cya-charcoal-hairline);
   --cya-border-control: var(--cya-charcoal-border);
   --cya-border-brand: var(--cya-teal);
   --cya-action-primary: var(--cya-gold);
@@ -59,6 +58,7 @@
   --cya-container-narrow: 720px;
   --cya-header-height: 88px;
   --cya-target-min: 48px;
+  --cya-button-height: 52px;
   --cya-font-heading: var(--font-cya-heading, Urbanist), Arial, sans-serif;
   --cya-font-body: var(--font-cya-body, "Open Sans"), Arial, sans-serif;
 }

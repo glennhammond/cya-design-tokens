@@ -1,4 +1,4 @@
-/* CYA Design Tokens 2.1.0. Generated from src/tokens.json by scripts/build.mjs. Do not edit. */
+/* CYA Design Tokens 2.2.0. Generated from src/tokens.json by scripts/build.mjs. Do not edit. */
 /* Import after @import "tailwindcss". */
 @theme inline {
   --color-teal: var(--cya-teal);
@@ -9,10 +9,10 @@
   --color-warm-white: var(--cya-warm-white);
   --color-white: var(--cya-white);
   --color-charcoal: var(--cya-charcoal);
-  --color-green-grey: var(--cya-green-grey);
   --color-pale-highlight: var(--cya-pale-highlight);
   --color-charcoal-muted: var(--cya-charcoal-muted);
   --color-charcoal-border: var(--cya-charcoal-border);
+  --color-charcoal-hairline: var(--cya-charcoal-hairline);
   --color-on-deep-muted: var(--cya-on-deep-muted);
   --color-logo-teal: var(--cya-logo-teal);
   --color-logo-pale: var(--cya-logo-pale);
@@ -21,7 +21,6 @@
   --color-scrim: var(--cya-scrim);
   --color-surface-page: var(--cya-surface-page);
   --color-surface-card: var(--cya-surface-card);
-  --color-surface-quiet: var(--cya-surface-quiet);
   --color-surface-deep: var(--cya-surface-deep);
   --color-surface-highlight: var(--cya-surface-highlight);
   --color-text-body: var(--cya-text-body);
